@@ -1,0 +1,22 @@
+THIS README is for the installation using oracle, an alternative if microsoft azure IS NOT AVAILABLE
+
+# osTicket Help Desk Lab
+
+A hands-on IT support lab documenting the installation, configuration,
+and troubleshooting of osTicket on an Ubuntu Server virtual machine.
+
+## Environment
+
+- Hypervisor: Oracle VirtualBox
+- Operating System: Ubuntu Server
+- Web Server: Apache
+- Scripting Language: PHP
+- Database: MariaDB
+- Help Desk Platform: osTicket
+
+## Documentation
+
+1. [Prerequisites](docs/prerequisites.md)
+2. [Installation](docs/installation.md)
+3. [Configuration](docs/configuration.md)
+4. [Troubleshooting](docs/troubleshooting.md)
