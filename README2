@@ -20,3 +20,122 @@ and troubleshooting of osTicket on an Ubuntu Server virtual machine.
 2. [Installation](docs/installation.md)
 3. [Configuration](docs/configuration.md)
 4. [Troubleshooting](docs/troubleshooting.md)
+
+
+# osTicket Help Desk Implementation
+
+## Project Summary
+
+This project demonstrates the installation and configuration of osTicket on an Ubuntu Server virtual machine using Oracle VirtualBox.
+
+The project uses Apache, PHP, and MariaDB to deploy a functional help desk ticketing system.
+
+### Technologies Used
+
+- Oracle VirtualBox
+- Ubuntu Server
+- Apache2
+- PHP
+- MariaDB
+- osTicket 1.18.4
+
+---
+
+## Installation and Configuration
+
+### 1. Virtual Machine Setup
+
+Created an Ubuntu Server virtual machine using Oracle VirtualBox.
+
+![VirtualBox](screenshots/01-virtualbox.png)
+
+### 2. Ubuntu Server Installation
+
+Installed Ubuntu Server and configured the network environment.
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+ip addr
+```
+
+![Ubuntu](screenshots/02-ubuntu-installation.png)
+
+### 3. Apache Installation
+
+Installed and enabled the Apache web server.
+
+```bash
+sudo apt install apache2 -y
+sudo systemctl enable --now apache2
+sudo systemctl status apache2
+```
+
+![Apache](screenshots/03-apache.png)
+
+### 4. PHP Installation
+
+Installed PHP and the required extensions for osTicket.
+
+```bash
+sudo apt install php libapache2-mod-php php-mysql php-imap php-xml php-mbstring php-gd php-curl php-intl php-apcu php-zip -y
+```
+
+Verified the PHP installation:
+
+```bash
+php -v
+php -m
+```
+
+![PHP](screenshots/04-php.png)
+
+### 5. MariaDB Installation
+
+Installed MariaDB and configured the database for osTicket.
+
+```bash
+sudo apt install mariadb-server -y
+sudo systemctl enable --now mariadb
+```
+
+![MariaDB](screenshots/05-mariadb.png)
+
+### 6. osTicket Installation
+
+Downloaded osTicket 1.18.4, extracted the application files, and configured the web directory.
+
+```bash
+sudo chown -R www-data:www-data /var/www/html/osticket
+```
+
+Prepared the osTicket configuration file and completed the web-based installation.
+
+![osTicket](screenshots/06-osticket-installation.png)
+
+### 7. Ticket Creation and Testing
+
+Accessed the Support Center, created a test ticket, and verified ticket management through the Staff Panel.
+
+![Test Ticket](screenshots/07-test-ticket.png)
+
+---
+
+## Final Result
+
+Successfully deployed and tested an osTicket help desk environment.
+
+Skills demonstrated:
+
+- Linux administration
+- Virtual machine configuration
+- Web server installation
+- PHP configuration
+- Database management
+- Application deployment
+- File permissions
+- Help desk ticket management
+
+## Video Demonstrations
+
+See the [Videos folder](videos/README.md) for installation and configuration walkthroughs.
