@@ -1,0 +1,31 @@
+# osTicket Video Demonstrations
+
+These videos document the installation, configuration, and testing of my osTicket help desk environment.
+
+## Video 1: VirtualBox Setup
+
+Demonstrates creating the virtual machine and configuring its settings.
+
+## Video 2: Ubuntu Server Installation
+
+Demonstrates installing Ubuntu Server and logging into the system.
+
+## Video 3: Apache2 Installation
+
+Demonstrates installing Apache2 and verifying that the web server is running.
+
+## Video 4: PHP Installation
+
+Demonstrates installing PHP and the required extensions for osTicket.
+
+## Video 5: MariaDB Configuration
+
+Demonstrates installing MariaDB and configuring the osTicket database.
+
+## Video 6: osTicket Installation
+
+Demonstrates downloading, extracting, and configuring osTicket.
+
+## Video 7: Ticket Creation and Management
+
+Demonstrates submitting a test ticket and managing it through the Staff Panel.
